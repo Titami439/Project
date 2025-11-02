@@ -28,7 +28,15 @@
     .menu a:hover {
       background-color: #027381;
     }
-      .container { background: white; padding: 2em; border-radius: 10px; max-width: 1000px; margin: auto; }
+      .container {  background-image: url("ton_image.jpg"); /* chemin vers ton image */
+  background-size: cover;       /* l'image remplit tout le bloc */
+  background-position: center;  /* centrage de l'image */
+  background-repeat: no-repeat; /* pas de répétition */
+  
+  /* superposition d'un voile blanc semi-transparent pour atténuer l'image */
+  background-color: rgba(255, 255, 255, 0.8); 
+  background-blend-mode: lighten; /* mélange l'image et le blanc */
+                  padding: 2em; border-radius: 10px; max-width: 1000px; margin: auto; }
     </style>
   </head>
   <body>
